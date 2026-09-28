@@ -1,0 +1,14 @@
+OK: astronauta 444 cadastrado
+ERRO: nao foi possivel carregar de arquivo_que_nao_existe.txt
+LISTA DE VOOS
+== planejado ==
+(nenhum)
+== em curso ==
+(nenhum)
+== finalizado com sucesso ==
+(nenhum)
+== finalizado com explosao ==
+(nenhum)
+ASTRONAUTAS MORTOS
+(nenhum)
+ERRO: astronauta com CPF 444 ja cadastrado

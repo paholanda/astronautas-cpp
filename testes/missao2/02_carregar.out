@@ -1,0 +1,24 @@
+OK: dados carregados de dados_teste.txt
+LISTA DE VOOS
+== planejado ==
+Voo 30: 333 Carla Souza
+== em curso ==
+(nenhum)
+== finalizado com sucesso ==
+Voo 10: 111 Ana Maria
+== finalizado com explosao ==
+Voo 20: 222 Bruno Costa
+ASTRONAUTAS MORTOS
+222 Bruno Costa - voos: 20
+ERRO: astronauta 222 esta morto
+OK: astronauta 111 adicionado ao voo 30
+OK: voo 30 lancado
+LISTA DE VOOS
+== planejado ==
+(nenhum)
+== em curso ==
+Voo 30: 333 Carla Souza, 111 Ana Maria
+== finalizado com sucesso ==
+Voo 10: 111 Ana Maria
+== finalizado com explosao ==
+Voo 20: 222 Bruno Costa
