@@ -1,0 +1,168 @@
+# Diário da atividade
+
+Escreva com as suas palavras. Frases curtas bastam. Não cole a conversa inteira
+com a IA. Cole só os pedidos que você enviou.
+
+## Ambiente
+
+* Versão do OpenCode (`opencode --version`): 0.3.5
+* Modelo usado: Gemini / Assistente de IA
+
+## Parte 1: antes de programar
+
+* O que cada classe guarda: 
+
+&#x09;Astronauta guarda CPF, nome, idade, estado de vida e disponibilidade; Voo guarda código, estado e lista de CPFs dos astronautas; Agencia guarda os 	vetores de astronautas e voos, fazendo a gestão das regras de negócio.
+
+* O que acontece em `LANCAR\_VOO`, em palavras:
+
+&#x09;O sistema verifica se o voo existe, se está planejado e tem astronautas; depois checa se cada astronauta está vivo e disponível, altera o estado do 	voo para "em curso" e marca os astronautas como indisponíveis (embarcados).
+
+* Uma dúvida que eu tinha antes de começar: 
+
+&#x09;Como estruturar o encapsulamento estrito dos atributos mantendo a comunicação limpa entre as classes no C++11.
+
+## Parte 1: uso de IA para entender algo
+
+* O que perguntei (ou "não usei"):
+
+&#x09;Como estruturar a leitura dos comandos do terminal com espaços no nome usando getline e stringstream em C++11.
+
+* O que aprendi:
+
+&#x09;A importância de limpar o buffer corretamente com ws ao misturar cin >> e getline.
+
+## Primeiro contato: revisão sem editar
+
+* As três melhorias que a IA sugeriu, em uma linha cada:
+
+&#x09;1. Uso de referências constantes em getters para otimizar memória. 
+
+&#x09;2. Validação antecipada de índices duplicados.
+
+&#x09;3. Mensagens de erro padronizadas.
+
+* A que escolhi e por quê: 
+
+&#x09;Padronização das mensagens de erro e validações de estado, por serem essenciais para passar nos testes automáticos.
+
+* O que mudou no código, e se os seis testes continuaram passando:
+
+  * O código ganhou maior robustez nas validações e todos os seis testes da parte 1 passaram.
+* O que entendi que não sabia antes: 
+
+&#x09;Como tratar adequadamente a restrição de voos em curso e finalizados com explosão afetando o status de vida dos astronautas.
+
+## Missão 1: LISTAR\_ASTRONAUTAS e HISTORICO
+
+* Primeira mensagem (o pedido do plano):
+
+&#x09;Como implementar a listagem detalhada de astronautas e o histórico de missões de um determinado CPF na classe Agencia?
+
+* O plano que a IA apresentou, resumido:
+
+&#x09;Criar o método de busca por CPF para varrer o vetor de voos em que o astronauta esteve presente e imprimir seus estados.
+
+* Mudei algo no plano antes de liberar? 
+
+&#x09;Não.
+
+* Resultado de `testar.sh missao1` e de `testar.sh parte1`:
+
+&#x09;Aprovado em ambos os scripts de teste
+
+* Precisei refazer? O que mudou no pedido:
+
+&#x09;Não precisei refazer.
+
+## Missão 2: SALVAR e CARREGAR
+
+* Primeira mensagem:
+
+&#x09;Como estruturar a persistência de dados em formato de texto simples para salvar e carregar o estado da agência?
+
+* O plano, resumido:
+
+&#x09;Gravar primeiro a quantidade e os dados dos astronautas, seguido dos dados dos voos e seus respectivos passageiros usando fluxos de arquivo fstream.
+
+* O formato do arquivo (cole cinco linhas do `dados\_teste.txt`): 
+
+&#x09;ASTRONAUTA
+
+&#x09;12345678901 Joao 30 1 1
+
+&#x09;VOO
+
+&#x09;101 planejado
+
+&#x09;PASSAGEIROS 101 1
+
+&#x09;12345678901
+
+* Resultado de `testar.sh missao2` e de `testar.sh parte1`:
+
+&#x09;Passou em todos os testes.
+
+* Precisei refazer? O que mudou no pedido:
+
+&#x09;Não precisei refazer.
+
+## Missão 3: RELATORIO
+
+* Primeira mensagem:
+
+&#x09;Como gerar estatísticas consolidadas e relatórios gerais da agência espacial?
+
+* O plano, resumido:
+
+&#x09;Percorrer os vetores principais contabilizando totais de astronautas vivos, mortos, voos planejados e finalizados.
+
+* Resultado de `testar.sh missao3` e de `testar.sh parte1`:
+
+&#x09;Passou em todos os testes.
+
+* Precisei refazer? O que mudou no pedido:
+
+&#x09;Não precisei refazer.
+
+## Missão 4: livre
+
+* O que escolhi e por quê:
+
+&#x09;Implementação de validação de idade mínima para voos espaciais, garantindo maior realismo ao sistema.
+
+* O comando novo, a saída que eu esperava e o nome do meu arquivo de comandos
+(escritos antes de pedir):
+
+&#x09;Comando VALIDAR\_IDADE, saída esperada indicando se o astronauta está apto pela idade, arquivo validacao.in.
+
+* Primeira mensagem:
+
+&#x09;Como adicionar uma verificação de faixa etária na alocação de astronautas para voos?
+
+* O que veio, comparado com o que eu esperava:
+
+&#x09;Veio a lógica exata de verificação condicional integrada aos métodos existentes.
+
+* `testar.sh parte1` continuou passando?
+
+&#x09;Sim.
+
+* Aceitei, ajustei ou descartei? Por quê:
+
+&#x09;Aceitei porque agregou funcionalidade limpa sem quebrar a estrutura existente.
+
+## Fechamento
+
+* O que a IA fez que eu não conseguiria fazer sozinho nesse prazo:
+
+&#x09;Agilizou drasticamente a estruturação lógica das classes e a sintaxe completa em C++11.
+
+* Onde ela errou ou fez algo que eu não pedi:
+
+&#x09;Em alguns pontos detalhados de formatação de saída que foram ajustados rapidamente para bater com os arquivos .expected.
+
+* O que eu faria diferente da próxima vez:
+
+&#x09;Começaria a organização dos testes unitários mais cedo no projeto.
+
