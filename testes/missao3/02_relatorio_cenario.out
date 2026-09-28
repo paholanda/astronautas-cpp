@@ -1,0 +1,51 @@
+OK: astronauta 111 cadastrado
+OK: astronauta 222 cadastrado
+OK: astronauta 333 cadastrado
+OK: astronauta 444 cadastrado
+ERRO: astronauta com CPF 111 ja cadastrado
+OK: voo 10 cadastrado
+OK: voo 20 cadastrado
+OK: voo 30 cadastrado
+ERRO: voo 10 ja cadastrado
+OK: astronauta 111 adicionado ao voo 10
+OK: astronauta 222 adicionado ao voo 10
+ERRO: astronauta 111 ja esta no voo 10
+ERRO: astronauta 999 nao cadastrado
+OK: astronauta 333 adicionado ao voo 20
+OK: astronauta 333 adicionado ao voo 30
+OK: voo 10 lancado
+OK: astronauta 111 adicionado ao voo 20
+ERRO: astronauta 111 esta indisponivel
+OK: astronauta 111 removido do voo 20
+OK: voo 20 lancado
+OK: voo 20 explodiu
+ERRO: astronauta 333 esta morto
+OK: astronauta 444 adicionado ao voo 30
+ERRO: astronauta 333 esta morto
+OK: astronauta 333 removido do voo 30
+OK: voo 30 lancado
+OK: voo 30 explodiu
+OK: voo 10 finalizado com sucesso
+LISTA DE VOOS
+== planejado ==
+(nenhum)
+== em curso ==
+(nenhum)
+== finalizado com sucesso ==
+Voo 10: 111 Ana Maria, 222 Bruno Costa
+== finalizado com explosao ==
+Voo 20: 333 Carla Souza
+Voo 30: 444 Diego Lima
+ASTRONAUTAS MORTOS
+333 Carla Souza - voos: 20
+444 Diego Lima - voos: 30
+RELATORIO
+voos planejados: 0
+voos em curso: 0
+voos finalizados com sucesso: 1
+voos finalizados com explosao: 2
+astronautas cadastrados: 4
+astronautas vivos: 2
+astronautas mortos: 2
+astronauta mais experiente: 111 Ana Maria (voos lancados: 1)
+taxa de sucesso: 33%

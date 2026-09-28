@@ -1,0 +1,22 @@
+OK: astronauta 111 cadastrado
+OK: astronauta 222 cadastrado
+OK: voo 10 cadastrado
+OK: voo 20 cadastrado
+OK: astronauta 111 adicionado ao voo 10
+OK: astronauta 111 adicionado ao voo 20
+OK: astronauta 222 adicionado ao voo 20
+OK: voo 10 lancado
+OK: voo 10 finalizado com sucesso
+OK: voo 20 lancado
+OK: voo 20 finalizado com sucesso
+RELATORIO
+voos planejados: 0
+voos em curso: 0
+voos finalizados com sucesso: 2
+voos finalizados com explosao: 0
+astronautas cadastrados: 2
+astronautas vivos: 2
+astronautas mortos: 0
+astronauta mais experiente: 111 Ana Maria (voos lancados: 2)
+taxa de sucesso: 100%
+OK: dados salvos em dados_teste.txt

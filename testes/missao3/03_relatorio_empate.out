@@ -1,0 +1,41 @@
+OK: astronauta 222 cadastrado
+OK: astronauta 111 cadastrado
+OK: voo 10 cadastrado
+OK: astronauta 222 adicionado ao voo 10
+OK: astronauta 111 adicionado ao voo 10
+RELATORIO
+voos planejados: 1
+voos em curso: 0
+voos finalizados com sucesso: 0
+voos finalizados com explosao: 0
+astronautas cadastrados: 2
+astronautas vivos: 2
+astronautas mortos: 0
+astronauta mais experiente: (nenhum)
+taxa de sucesso: (nenhum voo finalizado)
+OK: voo 10 lancado
+RELATORIO
+voos planejados: 0
+voos em curso: 1
+voos finalizados com sucesso: 0
+voos finalizados com explosao: 0
+astronautas cadastrados: 2
+astronautas vivos: 2
+astronautas mortos: 0
+astronauta mais experiente: 222 Bruno Costa (voos lancados: 1)
+taxa de sucesso: (nenhum voo finalizado)
+OK: voo 10 finalizado com sucesso
+OK: voo 20 cadastrado
+OK: astronauta 111 adicionado ao voo 20
+OK: voo 20 lancado
+OK: voo 20 explodiu
+RELATORIO
+voos planejados: 0
+voos em curso: 0
+voos finalizados com sucesso: 1
+voos finalizados com explosao: 1
+astronautas cadastrados: 2
+astronautas vivos: 1
+astronautas mortos: 1
+astronauta mais experiente: 111 Ana Maria (voos lancados: 2)
+taxa de sucesso: 50%
