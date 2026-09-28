@@ -1,0 +1,43 @@
+LISTA DE ASTRONAUTAS
+== disponiveis ==
+(nenhum)
+== em voo ==
+(nenhum)
+== mortos ==
+(nenhum)
+OK: astronauta 111 cadastrado
+OK: astronauta 222 cadastrado
+OK: astronauta 333 cadastrado
+LISTA DE ASTRONAUTAS
+== disponiveis ==
+111 Ana Maria (30 anos)
+222 Bruno Costa (35 anos)
+333 Carla Souza (28 anos)
+== em voo ==
+(nenhum)
+== mortos ==
+(nenhum)
+OK: voo 10 cadastrado
+OK: voo 20 cadastrado
+OK: astronauta 111 adicionado ao voo 10
+OK: astronauta 222 adicionado ao voo 20
+OK: voo 10 lancado
+OK: voo 20 lancado
+LISTA DE ASTRONAUTAS
+== disponiveis ==
+333 Carla Souza (28 anos)
+== em voo ==
+111 Ana Maria (30 anos) - voo 10
+222 Bruno Costa (35 anos) - voo 20
+== mortos ==
+(nenhum)
+OK: voo 20 explodiu
+OK: voo 10 finalizado com sucesso
+LISTA DE ASTRONAUTAS
+== disponiveis ==
+111 Ana Maria (30 anos)
+333 Carla Souza (28 anos)
+== em voo ==
+(nenhum)
+== mortos ==
+222 Bruno Costa (35 anos)
