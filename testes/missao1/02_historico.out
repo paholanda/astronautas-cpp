@@ -1,0 +1,24 @@
+ERRO: astronauta 999 nao cadastrado
+OK: astronauta 111 cadastrado
+HISTORICO DE 111 Ana Maria
+(nenhum voo)
+OK: voo 10 cadastrado
+OK: voo 20 cadastrado
+OK: voo 30 cadastrado
+OK: astronauta 111 adicionado ao voo 10
+OK: astronauta 111 adicionado ao voo 30
+HISTORICO DE 111 Ana Maria
+(nenhum voo)
+OK: voo 10 lancado
+HISTORICO DE 111 Ana Maria
+voo 10: em curso
+OK: voo 10 finalizado com sucesso
+OK: astronauta 111 adicionado ao voo 20
+OK: voo 20 lancado
+HISTORICO DE 111 Ana Maria
+voo 10: finalizado com sucesso
+voo 20: em curso
+OK: voo 20 explodiu
+HISTORICO DE 111 Ana Maria
+voo 10: finalizado com sucesso
+voo 20: finalizado com explosao
